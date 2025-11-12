@@ -5,7 +5,7 @@ stages{
 		steps{
 git branch:main url:https://github.com/venkatadurgaraoponnaganti/hello-flask
 
-}
+}}
 stage('install dep'){
 steps{
 sh '''pip install -r requirements.txt
