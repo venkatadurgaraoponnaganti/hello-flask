@@ -3,8 +3,7 @@ agent any
 stages{
 	stage('checkout'){
 		steps{
-git branch:main url:https://github.com/venkatadurgaraoponnaganti/hello-flask
-
+git branch:'main' url:'https://github.com/venkatadurgaraoponnaganti/hello-flask'
 }}
 stage('install dep'){
 steps{
