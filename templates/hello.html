@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Hello · Basic Flask{% endblock %}
+{% block content %}
+  <h2>Say Hello</h2>
+  <form method="post">
+    <label for="name">Your name</label>
+    <input id="name" name="name" placeholder="Type your name" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  {% if name %}
+    <p class="result">Hello, <strong>{{ name|e }}</strong>! 👋</p>
+  {% endif %}
+{% endblock %}
+
